@@ -6,6 +6,7 @@ import styles from './styles';
 import {useForm, formMaker} from '../../hooks';
 import {useDispatch, useSelector} from 'react-redux';
 import {login} from '../../containers/LoginContainer/actions';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 
 export default function Login({}) {
   const state = useSelector(state => state);
@@ -34,6 +35,7 @@ export default function Login({}) {
     <View style={styles._main}>
       <ScrollView keyboardShouldPersistTaps="handled">
         <Text style={styles._welcome_back_txt}>Welcome back!</Text>
+        <AntDesign name='close'/>
         <HeaderInput
           placeholder="Email"
           keyboardType="email-address"

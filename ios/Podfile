@@ -19,6 +19,7 @@ target 'react_native_template' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+
   target 'react_native_templateTests' do
     inherit! :complete
     # Pods for testing
